@@ -1,0 +1,51 @@
+html, body { min-width: 100%; min-height: 100%; margin: 0; padding: 0; font-family: "Trebuchet MS"; background-color: rgba(38, 38, 38, 1); }
+body { padding-bottom: 32px; }
+h1, h2, h3, h4, p, div, ul, ol, li { font-family: "Trebuchet MS"; margin: 0; padding: 0; }
+h1, h2, h3, h4 { color: rgba(255, 153, 0, 1); }
+p, div { color: rgba(255, 255, 255, 1); }
+
+a { text-decoration: none; font-weight: bold; }
+a:link, a:hover, a:active { color: rgb(255, 153, 0); }
+a:visited { color: rgb(218, 128, 14); }
+
+.panel { margin: 0; width: 100%; }
+
+.titleBar { background-color: rgba(38, 38, 38, 1); }
+.titleBar > .title { padding: 16px; font-size: 38px; text-shadow: 2px 2px #000; }
+
+.innerMainPanel { padding: 4px; }
+
+.bar { background-color: rgba(32, 32, 32, 1); padding: 16px;  }
+
+.dropdownBar { background-color: rgba(48, 48, 48, 1); margin-top: 4px; padding: 2px; }
+
+.dropdownBar > .titleBar { background-color: rgba(48, 48, 48, 1); padding: 16px; height: 34px; cursor: pointer; }
+.dropdownBar > .titleBar > .toggle { pointer-events: none; display: block; float: left; width: 32px; height: 34px; background: url(up.png) no-repeat center; background-size: 32px; }
+.dropdownBar > .titleBar > .title { pointer-events: none; display: block; float: left; padding: 0 0 0 8px; color: rgba(255, 255, 255, 1); font-size: 28px; }
+
+.dropdownBar > .contentContainer { overflow: hidden; }
+.dropdownBar > .contentContainer > .content { padding: 16px 32px 16px 32px; background-color: rgba(38, 38, 38, 1); }
+.dropdownBar > .contentContainer > .content > ol,ul { padding: 0 0 0 32px; }
+
+.dropdownBar.hidden > .contentContainer { height: 0px; }
+.dropdownBar.hidden > .titleBar > .toggle { background-image: url(down.png); }
+
+.content.stafflist > ul { padding: 0; }
+.content.stafflist > ul > .clear { clear: both; }
+.content.stafflist > ul > li { float: left; margin-left: 32px; }
+.content.stafflist > ul > li > p { display: inline-block; }
+
+.staff { font-weight: bold; }
+.staff.owner { color:rgb(186, 0, 0); }
+.staff.developer { color:rgb(255, 191, 0); }
+.staff.staffmanager { color:rgb(0, 203, 214); }
+.staff.superadmin { color:rgb(99, 0, 119); }
+.staff.admin { color:rgb(12, 0, 255); }
+.staff.moderator { color:rgb(255, 242, 0); }
+.staff.trialmoderator { color:rgb(153, 255, 0); }
+.staff.vip { color:rgb(0, 255, 127); }
+.staff.donator { color:rgb(171, 15, 255); }
+
+.footerBar { position: fixed; left: 0; right: 0; bottom: 0px; height: 32px; background-color: rgba(28, 28, 28, 1); }
+.footerBar > p { font-size: 16px; height: 18px; padding: 7px; float: left; }
+.footerBar > .credits { float: right; }
