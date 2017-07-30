@@ -19,7 +19,7 @@ function onLoad() {
         var content = contentContainer.getElementsByClassName('content')[0];
         var maxHeight = content.offsetHeight;
         var tarHeight = (dropdownBars[i].className.includes(' hidden') ? 0 : maxHeight);
-        //contentContainer.style = 'height: ' + tarHeight + 'px;';
+        contentContainer.style = 'height: ' + tarHeight + 'px;';
         maxHeights.push(maxHeight);
         tarHeights.push(tarHeight);
         heights.push(tarHeight);
@@ -28,7 +28,7 @@ function onLoad() {
             parent.className = (parent.className.includes(' hidden') ? parent.className.replace(' hidden', '') : parent.className + ' hidden');
         });
     }
-    //setInterval(updateContainerHeights, 15);
+    setInterval(updateContainerHeights, 15);
 }
 
 window.addEventListener('load', onLoad);
