@@ -3,6 +3,7 @@ body { padding-bottom: 32px; }
 h1, h2, h3, h4, p, div, ul, ol, li { font-family: "Trebuchet MS"; margin: 0; padding: 0; }
 h1, h2, h3, h4 { color: rgba(255, 153, 0, 1); }
 button { background: none; border: none; margin: 0; padding: 0; }
+button:focus { outline:0; }
 p, div { color: rgba(255, 255, 255, 1); }
 
 a { text-decoration: none; font-weight: bold; }
