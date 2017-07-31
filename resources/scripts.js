@@ -11,7 +11,7 @@ function updateContainerHeights() {
     }
 }
 
-//function onLoad() {
+function initBtns() {
     dropdownBars = document.getElementsByClassName('dropdownBar');
     for (var i = 0; i < dropdownBars.length; i++) {
         var contentContainer = dropdownBars[i].getElementsByClassName('contentContainer')[0];
@@ -29,6 +29,4 @@ function updateContainerHeights() {
         };
     }
     setInterval(updateContainerHeights, 15);
-//}
-
-//window.addEventListener('load', onLoad);
+}
