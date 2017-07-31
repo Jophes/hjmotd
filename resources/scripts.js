@@ -11,7 +11,7 @@ function updateContainerHeights() {
     }
 }
 
-function onLoad() {
+//function onLoad() {
     dropdownBars = document.getElementsByClassName('dropdownBar');
     for (var i = 0; i < dropdownBars.length; i++) {
         var contentContainer = dropdownBars[i].getElementsByClassName('contentContainer')[0];
@@ -23,12 +23,12 @@ function onLoad() {
         maxHeights.push(maxHeight);
         tarHeights.push(tarHeight);
         heights.push(tarHeight);
-        dropdownBars[i].getElementsByClassName('titleBar')[0].addEventListener('click', function(event) {
+        dropdownBars[i].getElementsByClassName('titleBar')[0].onClick = function(event) {
             var parent = event.target.parentNode;
             parent.className = (parent.className.includes(' hidden') ? parent.className.replace(' hidden', '') : parent.className + ' hidden');
-        });
+        };
     }
     setInterval(updateContainerHeights, 15);
-}
+//}
 
-window.addEventListener('load', onLoad);
+//window.addEventListener('load', onLoad);
