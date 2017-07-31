@@ -23,7 +23,7 @@ function initBtns() {
         maxHeights.push(maxHeight);
         tarHeights.push(tarHeight);
         heights.push(tarHeight);
-        dropdownBars[i].getElementsByClassName('titleBar')[0].onClick = function(event) {
+        dropdownBars[i].getElementsByClassName('titleBar')[0].onclick = function(event) {
             var parent = event.target.parentNode;
             parent.className = (parent.className.includes(' hidden') ? parent.className.replace(' hidden', '') : parent.className + ' hidden');
         };
