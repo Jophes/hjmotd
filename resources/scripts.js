@@ -26,9 +26,10 @@ function initBtns() {
         dropdownBars[i].getElementsByClassName('titleBar')[0].onclick = function(event) {
             var parent = event.target.parentNode;
             parent.className = (parent.className == 'dropdownBar hidden' ? 'dropdownBar' : 'dropdownBar hidden');
+            parent.getElementsByClassName('contentContainer')[0].style = (parent.className == 'dropdownBar hidden' ? 'height: 30px;' : 'height: 160px;');
         };
     }
-    setInterval(updateContainerHeights, 15);
+    //setInterval(updateContainerHeights, 15);
 }
 
 window.addEventListener('load', initBtns);
