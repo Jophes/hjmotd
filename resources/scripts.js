@@ -1,7 +1,6 @@
 var dropdownBars = [], containers = [], heights = [], tarHeights = [], maxHeights = [];
 
 function updateContainerHeights() {
-    console.log( "RUNLUA:print( \"This is called in Lua context\" )" )
     for (var i = 0; i < dropdownBars.length; i++)
     {
         tarHeights[i] = (dropdownBars[i].className == 'dropdownBar hidden' ? 0 : maxHeights[i]);
@@ -9,7 +8,6 @@ function updateContainerHeights() {
         if (Math.abs(tarHeights[i] - heights[i]) < 1) 
             heights[i] = tarHeights[i];
         containers[i].style = 'height: ' + heights[i] + 'px;';
-        console.log( "RUNLUA:print( \""+heights[i]+"\" )" )
     }
 }
 
