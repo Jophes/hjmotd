@@ -30,3 +30,5 @@ function initBtns() {
     }
     setInterval(updateContainerHeights, 15);
 }
+
+window.addEventListener('load', initBtns);
