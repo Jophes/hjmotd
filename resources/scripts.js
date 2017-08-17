@@ -1,4 +1,4 @@
-var dropdownBars = [], containers = [], heights = [], tarHeights = [], maxHeights = [];
+/*var dropdownBars = [], containers = [], heights = [], tarHeights = [], maxHeights = [];
 
 function updateContainerHeights() {
     for (var i = 0; i < dropdownBars.length; i++)
@@ -30,3 +30,4 @@ function initBtns() {
     }
     setInterval(updateContainerHeights, 15);
 }
+*/
