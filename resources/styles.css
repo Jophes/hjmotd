@@ -29,7 +29,7 @@ a:visited { color: rgb(218, 128, 14); }
 .dropdownBar > .contentContainer > .content { padding: 16px 32px 16px 32px; background-color: rgba(38, 38, 38, 1); }
 .dropdownBar > .contentContainer > .content > ol,ul { padding: 0 0 0 32px; }
 
-.dropdownBar.hidden > .contentContainer { height: 0px; }
+.dropdownBar.hidden > .contentContainer { /*height: 0px;*/ }
 .dropdownBar.hidden > .titleBar > .toggle { background-image: url(down.png); }
 
 .content.stafflist > ul { padding: 0; }
