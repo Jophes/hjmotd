@@ -3,7 +3,7 @@ var dropdownBars = [], containers = [], heights = [], tarHeights = [], maxHeight
 function updateContainerHeights() {
     for (var i = 0; i < dropdownBars.length; i++)
     {
-        tarHeights[i] = (dropdownBars[i].className.includes(' hidden') ? 0 : maxHeights[i]);
+        tarHeights[i] = (dropdownBars[i].className == 'dropdownBar hidden' ? 0 : maxHeights[i]);
         heights[i] = (heights[i] + (tarHeights[i] - heights[i]) * 0.2);
         if (Math.abs(tarHeights[i] - heights[i]) < 1) 
             heights[i] = tarHeights[i];
@@ -18,14 +18,14 @@ function initBtns() {
         containers.push(contentContainer);
         var content = contentContainer.getElementsByClassName('content')[0];
         var maxHeight = content.offsetHeight;
-        var tarHeight = (dropdownBars[i].className.includes(' hidden') ? 0 : maxHeight);
+        var tarHeight = (dropdownBars[i].className == 'dropdownBar hidden' ? 0 : maxHeight);
         contentContainer.style = 'height: ' + tarHeight + 'px;';
         maxHeights.push(maxHeight);
         tarHeights.push(tarHeight);
         heights.push(tarHeight);
         dropdownBars[i].getElementsByClassName('titleBar')[0].onclick = function(event) {
             var parent = event.target.parentNode;
-            parent.className = (parent.className.includes(' hidden') ? parent.className.replace(' hidden', '') : parent.className + ' hidden');
+            parent.className = (parent.className == 'dropdownBar hidden' ? 'dropdownBar' : 'dropdownBar hidden');
         };
     }
     setInterval(updateContainerHeights, 15);
