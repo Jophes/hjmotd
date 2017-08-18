@@ -1,3 +1,3 @@
 # H&J Motd
-H&amp;J DarkRP Motd Page
+Motd page for H&J's DarkRP Server
 Server IP: 88.99.0.69:27035
